@@ -2,7 +2,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from urllib.request import  urlopen as uReq
 import requests
-bangalore_links = pd.read_csv(r'/home/rahul/PythonProject/venv/bangalore_links.csv')
+bangalore_links = pd.read_csv(r'/home/rahul/Swiggy_restuarant_menu_scraping/bangalore_links.csv')
+#edit pd.read_csv with your file_path to bangalore_links.csv
 a = bangalore_links['links'].tolist()
 #print(len(a))
 header = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0'}
